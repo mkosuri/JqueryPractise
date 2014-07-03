@@ -1,0 +1,44 @@
+<html>
+  <head>
+   <script type="text/javascript" src="jquery-1.11.1.js"></script>
+   <style type="text/css">
+  .events{
+   	 height: 400;
+   	 width: 300;
+     color: blue;
+     background-color: yellow;
+     margin-top:8px;
+     font-size:18px;
+   }
+   h3{
+   	color: blue;
+   }
+   .newclass{
+   	background-color: green;
+   }
+  
+   </style>
+  </head>
+  <body>
+  <div class="events">
+    <h3> checking event handler</h3>
+   <p> this is paragraph one</p>
+   <p> this is paragraph one</p>
+   <p> this is paragraph one</p>
+   <p> this is paragraph one</p>
+   <p> this is paragraph one</p>
+   <p> this is paragraph one</p>
+
+  </div>
+
+  </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $(".events").hover(highlight,highlight);
+        });
+      function highlight(){
+      	 alert("hover");
+      	$(".events").toggleClass("newclass");
+      }
+    </script>
+  </html>

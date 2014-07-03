@@ -1,0 +1,54 @@
+<html>
+  <head>
+   <script type="text/javascript" src="jquery-1.11.1.js"></script>
+   <style type="text/css">
+    .a {
+    	color: blue;
+    	font-size: 16px;
+    }
+    .b {
+    	color: green;
+    	font-size: 20px;
+    	border: 2px;
+    	border-color: solid green;
+    }
+    #list1{
+    	height:100px;
+    	width: 150px;
+    	background-color: grey;
+    }
+   h1 {
+   	color: green;
+   }
+
+   </style>
+  </head>
+
+  <body>
+   <h1>Geeting and setting jquery content</h1>
+    <ul id="list1">
+       <li class="a"> item 1 </li>
+       <li class="a"> item 2 </li>
+       <li class="b"> item 3 </li>
+       <li class="b"> item 4 </li>
+    </ul>    
+     <div id="para1">
+
+     </div>
+    <p class="a">This is paragraph one with class "a"</p>
+    <p class="b"> This is paragraph two with class "b"</p>
+    <p class="a"> This is paragraph three with class "a"</p>
+    <p class="b"> This is paragraph four with class "b"</p>
+  <button type="button">Click me</button>
+ </body>
+ <script type="text/javascript">
+		$(document).ready(function(){
+		   alert($("#list1").html());
+       alert($("#list1").text());
+       setting data
+       $("#list1").html('<li>this new item </li> <li>this new item </li> <li>this new item </li>');
+       var newItem = $("<p> this is new paragraph</p>");
+          $("#para1").html(newItem.html());
+		});
+</script>
+</html>

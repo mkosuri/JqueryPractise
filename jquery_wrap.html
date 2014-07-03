@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>Jquery wrap method example</title>
+	 <script type="text/javascript" src="jquery-1.11.1.js"></script>
+</head>
+<body>
+	<div class="container">
+	  <div class="inner">Hello</div>
+	  <div class="inner">Goodbye</div>
+	</div>
+</body>
+<script>
+	$(document).ready(function(){
+    // $(".inner").wrap("<div class='new'>new div</div>");
+    $( ".inner" ).wrap(function() {
+     return "<div class='" + $( this ).text() + "'>new element</div>";
+    });  
+
+	});
+
+
+</script>
+</html>
