@@ -23,18 +23,26 @@
     .stripone{
     	background-color: blue;
     }
+    .highlight{
+    	font-weight: bold;
+    	background-color: grey;
+    }
+    table thead th{
+    	background-color: red;
+    	font-color :black;
+    }
 
  	</style>
 </head>
 <body>
   <table id="table1" style="width:300px">
     <caption>Player information</caption>
-    
-      <tr>
-	     <th>name</th>
+      <thead class="thead">
+	     <th >name</th>
 	     <th>Sname</th>
 	     <th>rank</th>
-     </tr>
+     </thead>
+    <tbody>
 			<tr>
 			  <td>Jill</td>
 			  <td>Smith</td>		
@@ -50,6 +58,7 @@
 			  <td>Doe</td>		
 			  <td>80</td>
 			</tr>
+		</tbody>
 </table>
  
 </body>
@@ -58,6 +67,15 @@
     // alert("checking");
     $("#table1 tr:even").addClass("stripone");
     $("#table1 tr:odd").addClass("stripetwo");
+    $("#table1 tr").hover(
+       function(){
+          $(this).toggleClass("highlight");
+       },
+       function (){
+        $(this).toggleClass("highlight");
+       }
+
+    )
  })
   
 
