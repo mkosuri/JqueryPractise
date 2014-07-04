@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+<<<<<<< HEAD
 	   <link rel="stylesheet" src= "jquery-ui-themes-1.11.0/themes/smoothness/jquery-ui.css">
 	   <script type="text/javascript" src="jquery-1.11.1.js"></script>
 	   <script type="text/javascript" src="jquery-ui.min.js"></script>
@@ -15,16 +16,55 @@
 	<body>   
 	  <div id="resizable">
         <h3>Resizable</h3>
+=======
+	   <!-- <link rel="stylesheet" src= "jquery-ui-themes-1.11.0/themes/smoothness/jquery-ui.css"> -->
+  <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	   <title>Resizable jquery</title>
+	   <style type="text/css">
+/*      #resizable { width: 250px; height: 150px; padding: 0.5em;background-color: grey; }
+      #resizable h3 { text-align: center; margin: 0;color:yellow;}
+      #resizable p {text-align:center;}
+*/
+
+	   </style>
+    <script type="text/javascript"> 
+        $(function() {
+          console.log('resizable');
+          $('#draggableHelper').draggable();
+            $("#resizable").resizable();
+        });
+</script>
+	</head>
+	<body>   
+    <!-- resizable -->
+	  <div id="resizable" class="ui-widget-content">
+        <h3 class="ui-widget-header">Resizable</h3>
+>>>>>>> 21a371bc2db5817cc1e42b47479c11bee3363b10
         <p>this is div for rezie elements </p>
         <p>this is div for rezie elements </p>
         <p>this is div for rezie elements </p>
         <p>this is div for rezie elements </p>
     </div>
+<<<<<<< HEAD
 	</body>
 		<script type="text/javascript"> 
 				$(function() {
 				    $("#resizable").resizable();
 				});
 </script>
+=======
+  <!-- draggable -->
+    <div id="draggableHelper" style="display:inline-block">
+		    <img id="image" src="http://www.google.com.br/images/srpr/logo3w.png" />
+				    <div id="draggable" class="ui-widget-content">
+				       <p>Drag me to my target</p>
+				    </div>
+    </div>
+    
+	</body>
+
+>>>>>>> 21a371bc2db5817cc1e42b47479c11bee3363b10
 </html>
 <!-- <link rel="stylesheet" src="../jquery-ui-themes-1.11.0/themes/smoothness/jquery-ui.css"> -->

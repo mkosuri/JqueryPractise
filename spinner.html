@@ -1,12 +1,13 @@
 <!DOCTYPE html>
   <html>
     	  <head>
-          <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+          <meta charset="utf-8">
+          <title>jQuery UI Spinner - Default functionality</title>
+          <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
           <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-          <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-
-    	    <title>jQuery UI Spinner - Default functionality</title>
-          <style type="text/css">
+          <script src="http://resources/demos/external/jquery.mousewheel.js"></script>
+          <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+          <link rel="stylesheet" href="http://resources/demos/style.css">
 
 
           </style>
@@ -52,14 +53,14 @@
                        }
                    });
 
-                  // $("#destroy").click(function() {
-                  //     alert( spinner.spinner( "instance"));
-                  //           if ( spinner.spinner( "instance" ) ) {
-                  //     spinner.spinner( "destroy" );
-                  //   } else {
-                  //     spinner.spinner();
-                  //   }
-                  // });
+                  $("#destroy").click(function() {
+                      alert( spinner.spinner( "instance"));
+                            if ( spinner.spinner( "instance" ) ) {
+                      spinner.spinner( "destroy" );
+                    } else {
+                      spinner.spinner();
+                    }
+                  });
                   
 
                   $( "#getvalue" ).click(function() {
